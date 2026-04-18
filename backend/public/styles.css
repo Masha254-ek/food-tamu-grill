@@ -1,0 +1,110 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --accent: #f97316;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #020617, #0f172a);
+}
+
+.hero {
+  position: relative;
+  min-height: 55vh;
+  background: radial-gradient(circle at top right, #fb923c 0%, #7c2d12 45%, #1e293b 90%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fdba74;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.6rem;
+  background: var(--accent);
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+main {
+  width: min(1050px, 92vw);
+  margin: -2rem auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: -0.5rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #374151;
+  border-radius: 0.7rem;
+}
+
+.features {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+footer {
+  text-align: center;
+  padding: 1.4rem;
+  color: var(--muted);
+}
